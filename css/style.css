@@ -366,7 +366,11 @@ section {
   }
 
   .cta-banner .btn {
-    margin-top: 0px;
+    margin-top: 16px;
+  }
+
+  .cta-banner p {
+    text-align: center;
   }
 
   .cta-banner .cta-content {
