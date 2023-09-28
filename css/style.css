@@ -271,14 +271,25 @@ section {
   margin-top: 24px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 425px) {
   section {
     padding: 0px 16px;
     margin-bottom: 60px;
   }
 
+  br {
+    display: none;
+  }
+
+  .offcanvas {
+    max-width: 50%;
+  }
   .custom-navbar {
     padding-right: 16px;
+  }
+
+  .header .container-fluid {
+    padding-right: 0px;
   }
 
   .header-desc {
@@ -286,9 +297,11 @@ section {
     flex-direction: column;
     width: 100%;
     gap: 24px;
+    margin: 0px;
   }
 
   .header-title {
+    padding-right: 16px;
     gap: 16px;
   }
 
@@ -312,24 +325,6 @@ section {
     width: auto;
   }
 
-  .cta-banner .btn {
-    margin-top: 0px;
-  }
-
-  .cta-banner .cta-content {
-    padding: 58px 64px;
-  }
-
-  .cta-content .big-header {
-    font-size: 24px;
-    line-height: 36px;
-  }
-
-  .content-service {
-    gap: 24px;
-    justify-content: center;
-  }
-
   .desc-service {
     width: 100%;
   }
@@ -340,6 +335,10 @@ section {
 
   .why-us .primary-copy {
     margin: 0px;
+  }
+
+  .custom-testimonial {
+    --bs-gutter-x: 2rem;
   }
 
   .testimonial .card-item {
@@ -361,6 +360,29 @@ section {
     padding-left: 0px;
   }
 
+  .custom-cta-banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-banner .btn {
+    margin-top: 0px;
+  }
+
+  .cta-banner .cta-content {
+    padding: 58px 64px;
+    width: 100%;
+  }
+
+  .cta-content .big-header {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .content-service {
+    gap: 24px;
+    justify-content: center;
+  }
   .faq-content {
     display: flex;
     flex-direction: column;
